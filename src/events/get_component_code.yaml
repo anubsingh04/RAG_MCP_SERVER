@@ -1,5 +1,6 @@
-mcp.tool.get-component-code:
+"mcp.get-component-code":
   fn: get_component_code
+  type: tool
   summary: "Get Component Code"
   description: "Get component Code"
   body:

@@ -1,4 +1,5 @@
-mcp.tool.get-ui-libraries:
+"mcp.get-ui-libraries":
   fn: get_ui_libraries
+  type: tool
   summary: "Get UI Libraries"
   description: "Get UI Libraries"
