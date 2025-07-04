@@ -1,0 +1,4 @@
+mcp.tool.get-components-list:
+  fn: get_components_list
+  summary: "Get Components List"
+  description: "Get list of components"

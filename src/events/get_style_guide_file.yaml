@@ -1,0 +1,4 @@
+mcp.tool.get-style-guide-file:
+  fn: get_style_guide_file
+  summary: "Get Style Guide File"
+  description: "Get Style Guide File"
