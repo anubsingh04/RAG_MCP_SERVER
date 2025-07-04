@@ -3,7 +3,7 @@ import { getGithubRepoFiles, getGithubData } from '../helper/github';
 
 export default async function (ctx: GSContext): Promise<GSStatus> {
   try {
-    const { componentNames } = ctx.inputs.data.body;
+    const { componentNames } = ctx.inputs.data.body.body;
     const filePaths = await getGithubRepoFiles();
 
     const finalFinalFilePaths = componentNames
