@@ -9,7 +9,7 @@ export default async function (ctx: GSContext): Promise<GSStatus> {
       filePaths.filter((fp: string) => fp.endsWith("components-list.txt"))
     );
 
-    return new GSStatus(true, 200, 'Success', { content: [{ type: "text", text: content }] });
+    return new GSStatus(true, 200, 'Success', { context :  content });
   } catch (error: any) {
     ctx.logger.error(error, 'Error getting component list');
     return new GSStatus(false, 500, error.message);

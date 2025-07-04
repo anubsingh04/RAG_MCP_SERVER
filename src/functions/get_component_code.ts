@@ -33,7 +33,7 @@ export default async function (ctx: GSContext): Promise<GSStatus> {
 
         `;
 
-    return new GSStatus(true, 200, 'Success', { content: [{ type: "text", text }] });
+    return new GSStatus(true, 200, 'Success', { context: text });
   } catch (error: any) {
     ctx.logger.error(error, 'Error getting component code');
     return new GSStatus(false, 500, error.message);
